@@ -1,0 +1,30 @@
+Requests=20 core=4 max=8 queue=8 keepAlive=30s timeout=5s
+[pool] size=0 active=0 queued=0 completed=0
+[pool] size=8 active=5 queued=0 completed=15
+
+ # | Status | Time (ms) | Worker | URL / Error
+ 1 |    200 |    699.31 | http-worker-1 | https://jsonplaceholder.typicode.com/posts/1
+ 2 |    200 |    791.79 | http-worker-2 | https://jsonplaceholder.typicode.com/posts/2
+ 3 |    200 |    791.85 | http-worker-3 | https://jsonplaceholder.typicode.com/posts/3
+ 4 |    200 |    786.17 | http-worker-4 | https://jsonplaceholder.typicode.com/posts/4
+ 5 |    200 |     71.89 | http-worker-8 | https://jsonplaceholder.typicode.com/posts/5
+ 6 |    200 |    181.24 | http-worker-1 | https://jsonplaceholder.typicode.com/posts/6
+ 7 |    200 |    182.77 | http-worker-8 | https://jsonplaceholder.typicode.com/posts/7
+ 8 |    200 |    175.37 | http-worker-4 | https://jsonplaceholder.typicode.com/posts/8
+ 9 |    200 |    288.62 | http-worker-5 | https://jsonplaceholder.typicode.com/posts/9
+10 |    200 |    291.67 | http-worker-2 | https://jsonplaceholder.typicode.com/posts/10
+11 |    200 |    181.64 | http-worker-3 | https://jsonplaceholder.typicode.com/users/1
+12 |    200 |    183.75 | http-worker-6 | https://jsonplaceholder.typicode.com/users/2
+13 |    200 |    790.45 | http-worker-5 | https://jsonplaceholder.typicode.com/users/3
+14 |    200 |    791.87 | http-worker-6 | https://jsonplaceholder.typicode.com/users/4
+15 |    200 |    796.00 | http-worker-7 | https://jsonplaceholder.typicode.com/users/5
+16 |    200 |    698.90 | http-worker-8 | https://jsonplaceholder.typicode.com/todos/1
+17 |    200 |    178.39 | http-worker-7 | https://jsonplaceholder.typicode.com/todos/2
+18 |    200 |    199.45 | http-worker-1 | https://jsonplaceholder.typicode.com/todos/3
+19 |    200 |    180.69 | http-worker-8 | https://jsonplaceholder.typicode.com/todos/4
+20 |    200 |    176.32 | http-worker-4 | https://jsonplaceholder.typicode.com/todos/5
+
+Summary: total=20 success(2xx)=20 HTTP non-2xx=0 networkErrors=0
+Request time: min=71.89 avg=421.91 max=796.00 ms; batch=1152.15 ms
+Pool: largest=8 completed=20 terminated=true
+CSV saved: C:\Users\22ff2\Documents\Codex\2026-10-03\ds\work\thread-pool-homework\evidence\public-results.csv
